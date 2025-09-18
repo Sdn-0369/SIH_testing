@@ -1,42 +1,77 @@
 const FloatComponent = () => {
   return (
-    <div className="flex flex-col rounded-xl p-5 h-1/2 h-[600px] gap-10 border-b-1 border-t-1 border-gray-700">
-      <div className="flex w-full gap-10">
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <h1>aoml</h1>
-          <h1>Floats : 0</h1>
-          <h1>Profiles : 0</h1>
-        </div>
-
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <h1>incois</h1>
-          <h1>Floats : 0</h1>
-          <h1>Profiles : 0</h1>
-        </div>
-
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <h1>coriolis</h1>
-          <h1>Floats : 0</h1>
-          <h1>Profiles : 0</h1>
+    <div className="grid grid-cols-3 grid-rows-2 gap-1 w-full max-w-2xl mx-auto p-1 rounded-lg h-96">
+      {/* Top row - 3 equal cards */}
+      <div
+        className="flex flex-col items-end justify-end text-white  border border-blue-300 p-4 font-mono text-sm"
+        style={{ backgroundColor: "rgb(10, 11, 20)" }}
+      >
+        <div className="text-right">
+          <div className="font-semibold">aoml</div>
+          <div>Floats: 0</div>
+          <div>Profiles: 0</div>
         </div>
       </div>
 
-      <div className="flex w-full gap-7">
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <h1>csiro</h1>
-          <h1>Floats : 0</h1>
-          <h1>Profiles : 0</h1>
+      <div
+        className="flex flex-col items-end justify-end text-white  border border-blue-300 p-4 font-mono text-sm"
+        style={{ backgroundColor: "rgb(10, 11, 20)" }}
+      >
+        <div className="text-right">
+          <div className="font-semibold">incois</div>
+          <div>Floats: 0</div>
+          <div>Profiles: 0</div>
         </div>
+      </div>
 
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <div>bodc</div>
-          <div>jma</div>
+      <div
+        className="flex flex-col items-end justify-end text-white border border-blue-300 p-4 font-mono text-sm"
+        style={{ backgroundColor: "rgb(10, 11, 20)" }}
+      >
+        <div className="text-right">
+          <div className="font-semibold">coriolis</div>
+          <div>Floats: 0</div>
+          <div>Profiles: 0</div>
         </div>
+      </div>
 
-        <div className="flex flex-col items-center justify-center text-white border-2 border-gray-700 rounded-xl p-10 w-full font-mono tracking-tighter h-[250px]">
-          <h1>csio</h1>
-          <h1>Floats : 0</h1>
-          <h1>Profiles : 0</h1>
+      {/* Bottom row - csiro takes up full cell */}
+      <div
+        className="flex flex-col items-end justify-end text-white  border border-blue-300 p-4 font-mono text-sm"
+        style={{ backgroundColor: "rgb(10, 11, 20)" }}
+      >
+        <div className="text-right">
+          <div className="font-semibold">csiro</div>
+          <div>Floats: 0</div>
+          <div>Profiles: 0</div>
+        </div>
+      </div>
+
+      {/* Bottom middle - split into bodc and jma */}
+      <div className="grid grid-rows-2 gap-1">
+        <div
+          className="flex flex-col items-end justify-end text-white  border border-blue-300 p-2 font-mono text-sm"
+          style={{ backgroundColor: "rgb(10, 11, 20)" }}
+        >
+          <div className="text-right font-semibold">bodc</div>
+        </div>
+        <div
+          className="flex flex-col items-end justify-end text-white  border border-blue-300 p-2 font-mono text-sm"
+          style={{ backgroundColor: "rgb(10, 11, 20)" }}
+        >
+          <div className="text-right font-semibold">jma</div>
+        </div>
+      </div>
+
+      {/* Bottom right - csio */}
+      <div
+        className="flex flex-col items-end justify-end text-white border border-blue-300 p-4 font-mono text-sm"
+        style={{ backgroundColor: "rgb(10, 11, 20)" }}
+      >
+        <div className="text-right">
+          <div className="font-semibold">csio</div>
+          <div>Floats: 0</div>
+          <div>Profiles: 0</div>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ export function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <div className="flex flex-col  justify-center h-[90px]  ">
+    <div className="flex flex-col  justify-center h-[90px] ">
       <TypewriterEffectSmooth words={words} />
       <h1 className="text-white/60 text- font-mono pb-2">
         Drag or scroll the map to explore different regions

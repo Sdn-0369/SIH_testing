@@ -42,7 +42,7 @@ const HomePage = () => {
         data-scroll-section
       >
         <h1 className="text-white font-serif text-6xl md:text-7xl lg:text-8xl tracking-tight font-medium whitespace-nowrap">
-          WE MADE OCEANS
+          WE MAKE OCEANS
         </h1>
 
         <h1 className="text-white font-serif text-6xl md:text-7xl lg:text-8xl tracking-tight font-medium whitespace-nowrap">
