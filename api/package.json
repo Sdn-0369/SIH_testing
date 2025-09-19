@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A basic Express.js API with TypeScript",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js",
@@ -14,25 +13,26 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^6.16.2",
-    "bcrypt": "^6.0.0",
-    "bcryptjs": "^3.0.2",
-    "dotenv": "^16.6.1",
-    "express": "^4.21.2",
-    "google-auth-library": "^10.3.0",
+    "@neondatabase/serverless": "^0.9.0",
+    "@prisma/adapter-neon": "5.15.0",
+    "@prisma/client": "5.15.0",
+    "@types/cors": "^2.8.19",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "google-auth-library": "^9.11.0",
     "jsonwebtoken": "^9.0.2",
-    "zod": "^4.1.9"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/bcrypt": "^6.0.0",
     "@types/bcryptjs": "^2.4.6",
-    "@types/dotenv": "^6.1.1",
-    "@types/express": "^4.17.23",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^20.19.17",
-    "nodemon": "^3.1.0",
-    "prisma": "^6.16.2",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.2",
+    "nodemon": "^3.1.2",
+    "prisma": "5.15.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.4.5"
   }
 }
