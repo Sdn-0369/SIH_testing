@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    // Core settings for a CommonJS Node.js project
+    "target": "es2016",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    // Helps with compatibility between CommonJS and ES Modules
+    "esModuleInterop": true,
+    
+    // Recommended strictness and safety settings
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}
